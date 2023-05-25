@@ -7,7 +7,7 @@ function TaskCard({ title, desc, id }) {
   const [edittedTaskDesc, setEddittedTaskDesc] = useState("");
   const [listValue, setListValue] = useState('list-1');
   const [isEdit, setEdit] = useState(false);
-  
+
   const { allTaskList, setAllTaskList } = useContext(StateContext);
 
   const editHandler = () => {
@@ -20,6 +20,7 @@ function TaskCard({ title, desc, id }) {
     const updatedTaskList = allTaskList.map((task) => {
       if (task.id === id) {
         return {
+            ...task,
           id: task.id,
           taskTitle: edittedTaskTitle,
           taskDescription: edittedTaskDesc,
