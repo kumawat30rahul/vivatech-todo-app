@@ -1,0 +1,59 @@
+.task-card-wrapper{
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    min-height: 180px;
+    height: auto;
+    min-width: 250px;
+    width: auto;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.list-1{
+    background-color: rgba(0, 128, 0, 0.568) !important;
+}
+.list-2{
+    background-color: rgba(233, 103, 52, 0.925) !important;
+}
+.list-3{
+    background-color: rgba(55, 184, 55, 0.87) !important;
+}
+.task-card-buttons-div{
+    position: absolute;
+    bottom: 15px;
+}
+
+.card-btn{
+    cursor: pointer;
+    font-weight: bold;
+    height: auto;
+    padding: 5px;
+    background-color: transparent;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.edit{
+    color: white;
+    border: 1.5px solid rgb(74, 74, 192);
+    background-color: rgb(74, 74, 192);
+}
+
+.task-card-buttons-div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.task-card-desc{
+    padding-top: 0px;
+    height: 40px;
+}
+
+.task-card-select{
+    height: 30px;
+    border-radius: 6px;
+    font-weight: bold;
+}
